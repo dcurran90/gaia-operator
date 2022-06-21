@@ -1,0 +1,6 @@
+apiVersion: gaia.my.domain/v1alpha1
+kind: Gaia
+metadata:
+  name: gaia-sample
+spec:
+  # Add fields here

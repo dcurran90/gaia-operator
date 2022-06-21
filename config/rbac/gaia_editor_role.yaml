@@ -1,0 +1,24 @@
+# permissions for end users to edit gaia.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: gaia-editor-role
+rules:
+- apiGroups:
+  - gaia.my.domain
+  resources:
+  - gaia
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - gaia.my.domain
+  resources:
+  - gaia/status
+  verbs:
+  - get
